@@ -1,42 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Gallery is rendering renders 1`] = `
+exports[`Contact component renders 1`] = `
 <DocumentFragment>
   <section>
     <h1
       data-testid="h1tag"
     >
-      Portraits
+      Contact me
     </h1>
-    <p>
-      Portraits of people in my life
-    </p>
-    <div>
-      <div
-        class="flex-row"
-      >
-        <img
-          alt="Cat green eyes"
-          class="img-thumbnail mx-1"
-          src="0.jpg"
-        />
-        <img
-          alt="Green parrot"
-          class="img-thumbnail mx-1"
-          src="1.jpg"
-        />
-        <img
-          alt="Yellow macaw"
-          class="img-thumbnail mx-1"
-          src="2.jpg"
-        />
-        <img
-          alt="Pug smile"
-          class="img-thumbnail mx-1"
-          src="3.jpg"
+    <form
+      id="contact-form"
+    >
+      <div>
+        <label
+          for="name"
+        >
+          Name:
+        </label>
+        <input
+          name="name"
+          type="text"
+          value=""
         />
       </div>
-    </div>
+      <div>
+        <label
+          for="email"
+        >
+          Email address:
+        </label>
+        <input
+          name="email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div>
+        <label
+          for="message"
+        >
+          Message:
+        </label>
+        <textarea
+          name="message"
+          rows="5"
+        />
+      </div>
+      <button
+        data-testid="button"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
   </section>
 </DocumentFragment>
 `;
